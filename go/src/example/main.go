@@ -5,10 +5,10 @@ import (
 	//"log"
 )
 
-// SecKillWnd为UI主窗口名称
+// MainWnd为UI主窗口名称
 
 func main() {
-	obj := goback.Regist("SecKill")
+	obj := goback.Regist("MainWnd")
 	for {
 		_, ok := <-obj.BufCh
 		if !ok {
