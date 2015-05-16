@@ -39,4 +39,4 @@ namespace UI
 			return lRes;
 		return CWindowWnd::HandleMessage(uMsg, wParam, lParam);
 	}
-£ý
+}
