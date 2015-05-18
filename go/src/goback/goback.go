@@ -32,8 +32,8 @@ func Regist(cppwndName string) *BackServer {
 }
 
 func (p *BackServer) Push(data string) {
-	log.Println("Push message is:", data)
 	p.backWnd.SendSyn(data)
+	log.Println("Push message is:", data)
 }
 
 func (p *BackServer) Accept(ldata interface{}) {
