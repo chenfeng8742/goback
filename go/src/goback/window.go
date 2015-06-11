@@ -1,11 +1,11 @@
 package goback
 
 import (
+	"github.com/chenfeng/goback/win"
 	"log"
 	"syscall"
 	"unicode/utf16"
 	"unsafe"
-	"win"
 )
 
 var (
