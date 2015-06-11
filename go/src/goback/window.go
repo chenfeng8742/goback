@@ -64,7 +64,7 @@ func NewBackWnd(cppwndName string) *BackWnd {
 	// 获取主窗口句柄
 	obj.cppwnd = cppwndName
 	obj.hwnd = FindWindow("", cppwndName)
-	go obj.WaitMessage()
+	//go obj.WaitMessage()
 
 	return obj
 }

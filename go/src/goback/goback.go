@@ -31,6 +31,10 @@ func Regist(cppwndName string) *BackServer {
 	return backsev
 }
 
+func Wait() {
+	backsev.backWnd.WaitMessage()
+}
+
 func (p *BackServer) Push(data string) {
 	p.backWnd.SendSyn(data)
 	log.Println("Push message is:", data)
