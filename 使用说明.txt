@@ -1,0 +1,7 @@
+1、golang端，goback需要作为一个系统包放到 GOPATH\github.com\chenfeng\goback
+
+2、example作为一个后台服务例子，即实际项目，只需要引用"github.com/chenfeng/goback"即可使用，消息是由隐藏
+
+窗口自动推送到后台服务的
+
+3、examplecpp作为c++端例子，可以主动推送消息到后台服务

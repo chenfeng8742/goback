@@ -6,14 +6,16 @@
 使用方式: 
 ```
 // MainWnd为UI主窗口名称 
-obj := goback.Regist("MainWnd") 
-for {
-     _, ok := <-obj.BufCh 
-    if !ok { 
-            break 
-         } 
-    }
-close(obj.BufCh) 
+obj := goback.Regist("MainWnd")
+go func() {
+	for {
+		_, ok := <-obj.BufCh
+		if !ok {
+			break
+		}
+	}
+}()
+close(obj.BufCh)
 // end
 ```
 

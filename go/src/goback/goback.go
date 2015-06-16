@@ -5,14 +5,15 @@ import (
 )
 
 // 外部使用方式示例:
-// obj := Regist()
-// for {
-//	    data, ok := <-obj.BufCh
-//		if !ok {
-//			break
+//	obj := goback.Regist("MainWnd")
+//	go func() {
+//		for {
+//			_, ok := <-obj.BufCh
+//			if !ok {
+//				break
+//			}
 //		}
-//      ...
-//	}
+//	}()
 //	close(obj.BufCh)
 
 type BackServer struct {
