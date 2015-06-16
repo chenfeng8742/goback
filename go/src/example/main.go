@@ -20,4 +20,5 @@ func main() {
 		}
 		close(obj.BufCh)
 	}()
+	goback.Wait()
 }
